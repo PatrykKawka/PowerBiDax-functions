@@ -1,7 +1,7 @@
 dim_Calendar = 
 VAR Kalendarz = (
-    VAR   min_date = MIN(fact_rezerwacje[Data rezerwacji])
-    VAR   max_date = MAX(fact_rezerwacje[Data wymeldowania])
+    VAR   min_date = MIN(table[ColumnName])
+    VAR   max_date = MAX(table[ColumnName])
 RETURN
     CALENDAR(min_date, max_date)
 )
